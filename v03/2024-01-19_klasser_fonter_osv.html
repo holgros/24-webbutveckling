@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: yellow;
+      }
+      .red {
+        color: red;
+      }
+      #minSpeciellaParagraf {
+        font-size: 20px;
+        color: pink;
+      }
+      h1.green {
+        color: green;
+      }
+      /* Extern font och bakgrundsbild */
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+      body {
+        font-family: "Roboto", sans-serif;
+        background-image: url("bild.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        En kommentar i HTML
+    -->
+    <p class="red">Denna paragraf stilsätts som röd...</p>
+    <p>... men inte denna!</p>
+    <p class="red" id="minSpeciellaParagraf">
+      Denna paragraf har storlek 20px.
+    </p>
+    <h1 class="red">Denna rubrik tillhör klassen red.</h1>
+    <h1 class="red green">
+      Denna rubrik tillhör klassen red och dessutom klassen green.
+    </h1>
+    <p class="green">
+      Denna paragraf tillhör klassen green, men är inte ett element av typen h1.
+    </p>
+  </body>
+</html>
