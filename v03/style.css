@@ -10,3 +10,8 @@ p {
 h1 {
   background-color: #8f8f8f;
 }
+
+.image {
+  display: none;
+  width: 1000px;
+}

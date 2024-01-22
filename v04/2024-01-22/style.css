@@ -1,0 +1,24 @@
+p {
+  background-color: pink;
+}
+
+.halv {
+  width: 50%;
+}
+
+.bold {
+  font-weight: bold;
+  background-color: yellow;
+}
+
+img {
+  /* display: none; */
+  width: 100px;
+}
+
+.lorem {
+  width: 40%;
+  height: 100px;
+  background-color: lightgray;
+  overflow: scroll;
+}
