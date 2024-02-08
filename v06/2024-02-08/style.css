@@ -1,0 +1,33 @@
+/* Skriv all styling för stora skärmar först */
+.container {
+  display: flex;
+}
+
+.item {
+  padding: 5%;
+  border: solid black 1px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 10%;
+  }
+  .item {
+    width: 35%;
+    background-color: green;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 600px) {
+  .container {
+    display: inline;
+  }
+  .item {
+    width: 90%;
+    background-color: pink;
+  }
+}
