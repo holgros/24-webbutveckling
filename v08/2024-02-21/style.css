@@ -1,0 +1,13 @@
+.min-klass:hover {
+  color: red;
+}
+input:focus {
+  background-color: grey;
+}
+p:first-child {
+  background-color: yellow;
+}
+
+.anfang::first-letter {
+  font-size: x-large;
+}
