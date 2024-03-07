@@ -1,0 +1,15 @@
+/* 
+  transition gör att css-förändringar vid t.ex.
+  :hover tar lite tid och animeras.  
+*/
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: border-radius 2s ease-out;
+}
+
+div:hover {
+  border-radius: 50%;
+  background-color: blue;
+}

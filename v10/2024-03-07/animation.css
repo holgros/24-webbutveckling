@@ -1,0 +1,41 @@
+/* animation-name ska vara namnet på en @keyframes*/
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  animation-name: my-animation;
+  animation-duration: 2s; /*Här anges hur lång tid animationen ska ta.*/
+  animation-iteration-count: infinite;
+}
+
+/* 
+  @keyframes styr hur vissa nyckel-frames (bilder) ska se ut.
+  Webbläsaren animerar övergången mellan keyframes. 
+
+  Här nedan kommer animationen gå från from-läget till to-läget
+  och sedan börja om.
+
+*/
+
+@keyframes my-animation {
+  from {
+    background-color: blueviolet;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+/* 
+  @keyframes kan anges med procent.
+  0% är vid animationens början.
+  100% är vid animationens slut.
+
+  Tips: om 0% och 100% ser likadana ut kan man
+  få till en "pulserande" animation som repeteras. 
+*/
+/* @keyframes my-animation {
+  0% {background-color: blueviolet;}
+  50% {background-color: yellow;}
+  100% {background-color: blueviolet;}
+} */

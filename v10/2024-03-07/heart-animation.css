@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: pink;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fa-heart {
+  font-size: 200px;
+  color: red;
+}
+
+/* animation-name ska vara namnet på en @keyframes*/
+.pulsating {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* 
+  @keyframes styr hur vissa nyckel-frames (bilder) ska se ut.
+  Webbläsaren animerar övergången mellan keyframes. 
+*/
+@keyframes pulse {
+  10% {
+    transform: scale(0.8); /* krymper hjärtat något, så det "slår" */
+  }
+}

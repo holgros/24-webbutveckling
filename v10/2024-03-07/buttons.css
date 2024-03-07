@@ -1,0 +1,51 @@
+button {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px black;
+  padding: 5px 10px;
+  transition: all 1s;
+}
+
+.yellow-black {
+  color: #ccc;
+  background-image: url("images/yellow-black.jpeg");
+  background-position: top right;
+}
+
+.yellow-black:hover {
+  color: black;
+  background-position: bottom left;
+}
+
+.yellow-black-vert {
+  color: #ccc;
+  background-image: url("images/yellow-black-vert.jpeg");
+  background-position: top right;
+}
+
+.yellow-black-vert:hover {
+  color: black;
+  background-position: top left;
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(18, 230, 210, 1),
+    rgba(93, 64, 238, 1),
+    rgba(227, 64, 238, 1)
+  );
+  background-size: 300% 300%;
+  background-position: top left;
+}
+
+.gradient:hover {
+  background-position: bottom right;
+}
+
+div.gradient {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
