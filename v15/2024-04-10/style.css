@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  width: 50vw;
+  margin-bottom: 50px;
+  color: aliceblue;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 50vw;
+  font-size: large;
+}
+
+button {
+  padding: 10px;
+  margin: 10px 10px 0 0;
+}
+
+#outputContainer {
+  background-color: aliceblue;
+  width: 50vw;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#outputContainer div {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: aqua;
+}

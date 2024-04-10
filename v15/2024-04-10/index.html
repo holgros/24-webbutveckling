@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>DOM</title>
+  </head>
+  <body>
+    <section>
+      <h1>Skapa objekt i DOMen</h1>
+      <p>
+        De två knapparna nedan har varsin eventlyssnare som lyssnar efter
+        klick-event på knapparna.
+      </p>
+      <p>
+        Knapparna läser det som är inskrivet i textfältet nedan, lägger
+        innehållet i en div som sedan läggs i den vita rutan längst ned.
+      </p>
+      <h2>Utmaning</h2>
+      <p>
+        Kan du modifiera css och javascript så att de div:ar som skapas av
+        knapparna har olika bakgrundsfärg? Så att det ser ut som att det är två
+        personer som har en dialog.
+      </p>
+      <p>
+        Kan du skriva JavaScript så att det slumpas en nya bakgrundsfärg på
+        varje div som skapas? Du kan säkert googla kod som slumpar fram en färg.
+      </p>
+    </section>
+    <form>
+      <input
+        type="text"
+        name=""
+        placeholder="Skriv något här..."
+        id="txtMessage" />
+      <br />
+      <button type="button" id="btnObject">Lägg till med objekt</button>
+      <button type="button" id="btnHTML">Lägg till med HTML</button>
+    </form>
+    <h2>Output</h2>
+    <div id="outputContainer"></div>
+    <!-- 
+      Längst ned i sidan länkar vi in vårat javascript så att
+      webbläsaren hämtar koden tillsammans med sidan och kör den.
+    -->
+    <script src="app.js"></script>
+  </body>
+</html>
