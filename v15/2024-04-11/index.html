@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>JavaScript events</title>
+  </head>
+  <body>
+    <h1>Exempel på DOM events och event-lyssnare</h1>
+    <p>
+      <a href="keypress-demo.html">Här finns demo på tangent-tryck.</a>
+    </p>
+    <p>
+      Öppna konsollen (Ctrl + Shift + J) och se vad som skrivs ut när du
+      interagerar med sidan. Titta i filen <code>app.js</code> för att se hur
+      koden fungerar.
+    </p>
+    <form>
+      <input id="txtInput" type="text" placeholder="Skriv något här." />
+    </form>
+    <button id="btn">Knapp</button>
+    <div id="mouseOverDemo">
+      <p>Dra muspekaren över den här div:en.</p>
+      <p>I konsollen skrivs muspekarens koordinater ut.</p>
+      <ul>
+        <li>
+          Notera riktningen på koordinatsystemet, omvänt mot ett "riktigt"
+          koordinatsystem.
+        </li>
+        <li>
+          Notera skillnaden på koordinaterna i sidan och koordinaterna som är
+          relativa till div:en.
+        </li>
+      </ul>
+    </div>
+    <h2>Nedan är en så kallad <code>canvas</code>.</h2>
+    <p>
+      Avkommentera koden i eventlyssnaren för <code>mousemove</code> (i
+      <code>app.js</code> ) för canvasen. Dra sedan muspekaren över!
+    </p>
+    <p>
+      Kan du få strecket som ritas att byta färg vid olika hastighet på
+      muspekaren?
+    </p>
+
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <script src="app.js"></script>
+  </body>
+</html>
